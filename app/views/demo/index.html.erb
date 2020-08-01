@@ -1,6 +1,8 @@
-<h1>Hello World html template</h1>
+<h1>Hello world from index!</h1>
 
-<%= 1+1 %>
+<a href="/demo/hello">Hello page 1</a><br />
+<%= link_to('Hello page 2', {:action => 'hello'}) %><br />
 
-<% target = "world" %>
-<%= "Hello #{target}" %>
+<%= link_to('Hello with parameters', {:action => 'hello', :page => 5, :id => 20}) %><br />
+
+<%= link_to('Roar', '#', :onclick => "jsRoar('JavaScript'); return true;") %>

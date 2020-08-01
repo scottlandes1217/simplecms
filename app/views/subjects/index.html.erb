@@ -4,7 +4,11 @@
   
   <div id="subheader">
     <h2>Subjects</h2>
-    <%= link_to("Add New Subject", new_subject_path, :class => 'action new') %>
+
+  <%= image_tag('plus_sign.png', :size => '11x11', :alt => '+') %>
+
+  <%= link_to("Add New Subject", new_subject_path, :class => 'action new') %>
+  
   </div>
 
   <table class="listing" summary="Subject list">
